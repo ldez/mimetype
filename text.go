@@ -26,8 +26,8 @@ const (
 	TextDirectoryDeprecatedByRfc6350 = "text/directory"
 	// TextDNS dns mime type.
 	TextDNS = "text/dns"
-	// TextEcmascriptObsoletedInFavorOfApplicationEcmascript ecmascript (OBSOLETED in favor of application/ecmascript) mime type.
-	TextEcmascriptObsoletedInFavorOfApplicationEcmascript = "text/ecmascript"
+	// TextEcmascriptObsoletedInFavorOfTextJavascript ecmascript (OBSOLETED in favor of text/javascript) mime type.
+	TextEcmascriptObsoletedInFavorOfTextJavascript = "text/ecmascript"
 	// TextEncaprtp encaprtp mime type.
 	TextEncaprtp = "text/encaprtp"
 	// TextEnriched enriched mime type.
@@ -46,8 +46,8 @@ const (
 	TextGrammarRefList = "text/grammar-ref-list"
 	// TextHTML html mime type.
 	TextHTML = "text/html"
-	// TextJavascriptObsoletedInFavorOfApplicationJavascript javascript (OBSOLETED in favor of application/javascript) mime type.
-	TextJavascriptObsoletedInFavorOfApplicationJavascript = "text/javascript"
+	// TextJavascript javascript mime type.
+	TextJavascript = "text/javascript"
 	// TextJcrCnd jcr-cnd mime type.
 	TextJcrCnd = "text/jcr-cnd"
 	// TextMarkdown markdown mime type.

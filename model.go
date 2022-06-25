@@ -22,6 +22,8 @@ const (
 	ModelMtl = "model/mtl"
 	// ModelObj obj mime type.
 	ModelObj = "model/obj"
+	// ModelPrc prc mime type.
+	ModelPrc = "model/prc"
 	// ModelStep step mime type.
 	ModelStep = "model/step"
 	// ModelStepXML step+xml mime type.
@@ -32,6 +34,8 @@ const (
 	ModelStepXMLZip = "model/step-xml+zip"
 	// ModelStl stl mime type.
 	ModelStl = "model/stl"
+	// ModelU3d u3d mime type.
+	ModelU3d = "model/u3d"
 	// ModelVndColladaXML vnd.collada+xml mime type.
 	ModelVndColladaXML = "model/vnd.collada+xml"
 	// ModelVndDwf vnd.dwf mime type.
@@ -97,6 +101,8 @@ func IsModel(mt string) bool {
 		return true
 	case "model/obj":
 		return true
+	case "model/prc":
+		return true
 	case "model/step":
 		return true
 	case "model/step+xml":
@@ -106,6 +112,8 @@ func IsModel(mt string) bool {
 	case "model/step-xml+zip":
 		return true
 	case "model/stl":
+		return true
+	case "model/u3d":
 		return true
 	case "model/vnd.collada+xml":
 		return true
