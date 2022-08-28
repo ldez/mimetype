@@ -1,3 +1,4 @@
+// package main generates mapping from IANA CSV file.
 package main
 
 //go:generate go run generator.go

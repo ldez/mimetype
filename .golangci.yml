@@ -6,13 +6,20 @@ run:
 linters:
   enable-all: true
   disable:
-    - maligned
-    - interfacer
-    - scopelint
-    - golint
-    - sqlclosecheck
-    - rowserrcheck
-    - cyclop
+    - scopelint # deprecated
+    - interfacer # deprecated
+    - maligned # deprecated
+    - golint # deprecated
+    - exhaustivestruct # deprecated
+    - scopelint # deprecated
+    - varcheck # deprecated
+    - structcheck # deprecated
+    - nosnakecase # deprecated
+    - deadcode # deprecated
+    - ifshort # deprecated
+    - sqlclosecheck # not relevant (SQL)
+    - rowserrcheck # not relevant (SQL)
+    - cyclop # duplicate of gocyclo
     - lll
     - dupl
     - wsl
@@ -21,7 +28,7 @@ linters:
     - goerr113
     - wrapcheck
     - exhaustive
-    - exhaustivestruct
+    - exhaustruct
     - testpackage
     - tparallel
     - paralleltest
