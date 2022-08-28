@@ -4,6 +4,8 @@ package mimetype
 // THIS FILE MUST NOT BE EDITED BY HAND
 
 const (
+	// MessageBhttp bhttp mime type.
+	MessageBhttp = "message/bhttp"
 	// MessageCpim CPIM mime type.
 	MessageCpim = "message/CPIM"
 	// MessageDeliveryStatus delivery-status mime type.
@@ -52,6 +54,8 @@ const (
 func IsMessage(mt string) bool {
 	switch mt {
 	case "message/CPIM":
+		return true
+	case "message/bhttp":
 		return true
 	case "message/delivery-status":
 		return true

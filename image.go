@@ -18,6 +18,8 @@ const (
 	ImageCgm = "image/cgm"
 	// ImageDicomRle dicom-rle mime type.
 	ImageDicomRle = "image/dicom-rle"
+	// ImageDpx dpx mime type.
+	ImageDpx = "image/dpx"
 	// ImageEmf emf mime type.
 	ImageEmf = "image/emf"
 	// ImageExample example mime type.
@@ -176,6 +178,8 @@ func IsImage(mt string) bool {
 	case "image/cgm":
 		return true
 	case "image/dicom-rle":
+		return true
+	case "image/dpx":
 		return true
 	case "image/emf":
 		return true

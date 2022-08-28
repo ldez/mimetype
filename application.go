@@ -96,6 +96,10 @@ const (
 	ApplicationAtxml = "application/ATXML"
 	// ApplicationAuthPolicyXML auth-policy+xml mime type.
 	ApplicationAuthPolicyXML = "application/auth-policy+xml"
+	// ApplicationAutomationmlAmlXML automationml-aml+xml mime type.
+	ApplicationAutomationmlAmlXML = "application/automationml-aml+xml"
+	// ApplicationAutomationmlAmlxZip automationml-amlx+zip mime type.
+	ApplicationAutomationmlAmlxZip = "application/automationml-amlx+zip"
 	// ApplicationBacnetXddZip bacnet-xdd+zip mime type.
 	ApplicationBacnetXddZip = "application/bacnet-xdd+zip"
 	// ApplicationBatchSMTP batch-SMTP mime type.
@@ -164,6 +168,8 @@ const (
 	ApplicationCoapPayload = "application/coap-payload"
 	// ApplicationCommonground commonground mime type.
 	ApplicationCommonground = "application/commonground"
+	// ApplicationConciseProblemDetailsCbor concise-problem-details+cbor mime type.
+	ApplicationConciseProblemDetailsCbor = "application/concise-problem-details+cbor"
 	// ApplicationConferenceInfoXML conference-info+xml mime type.
 	ApplicationConferenceInfoXML = "application/conference-info+xml"
 	// ApplicationCplXML cpl+xml mime type.
@@ -804,6 +810,8 @@ const (
 	ApplicationSsmlXML = "application/ssml+xml"
 	// ApplicationStixJSON stix+json mime type.
 	ApplicationStixJSON = "application/stix+json"
+	// ApplicationSwidCbor swid+cbor mime type.
+	ApplicationSwidCbor = "application/swid+cbor"
 	// ApplicationSwidXML swid+xml mime type.
 	ApplicationSwidXML = "application/swid+xml"
 	// ApplicationTampApexUpdate tamp-apex-update mime type.
@@ -848,6 +856,8 @@ const (
 	ApplicationTlsrptGzip = "application/tlsrpt+gzip"
 	// ApplicationTlsrptJSON tlsrpt+json mime type.
 	ApplicationTlsrptJSON = "application/tlsrpt+json"
+	// ApplicationTmJSON tm+json mime type.
+	ApplicationTmJSON = "application/tm+json"
 	// ApplicationTnauthlist tnauthlist mime type.
 	ApplicationTnauthlist = "application/tnauthlist"
 	// ApplicationTokenIntrospectionJwt token-introspection+jwt mime type.
@@ -1130,6 +1140,8 @@ const (
 	ApplicationVndBekitzurStechJSON = "application/vnd.bekitzur-stech+json"
 	// ApplicationVndBelightsoftLhzdZip vnd.belightsoft.lhzd+zip mime type.
 	ApplicationVndBelightsoftLhzdZip = "application/vnd.belightsoft.lhzd+zip"
+	// ApplicationVndBelightsoftLhzlZip vnd.belightsoft.lhzl+zip mime type.
+	ApplicationVndBelightsoftLhzlZip = "application/vnd.belightsoft.lhzl+zip"
 	// ApplicationVndBintMedContent vnd.bint.med-content mime type.
 	ApplicationVndBintMedContent = "application/vnd.bint.med-content"
 	// ApplicationVndBiopaxRdfXML vnd.biopax.rdf+xml mime type.
@@ -1276,6 +1288,8 @@ const (
 	ApplicationVndDart = "application/vnd.dart"
 	// ApplicationVndDataVisionRdz vnd.data-vision.rdz mime type.
 	ApplicationVndDataVisionRdz = "application/vnd.data-vision.rdz"
+	// ApplicationVndDatalog vnd.datalog mime type.
+	ApplicationVndDatalog = "application/vnd.datalog"
 	// ApplicationVndDatapackageJSON vnd.datapackage+json mime type.
 	ApplicationVndDatapackageJSON = "application/vnd.datapackage+json"
 	// ApplicationVndDataresourceJSON vnd.dataresource+json mime type.
@@ -2672,6 +2686,8 @@ const (
 	ApplicationVndSvd = "application/vnd.svd"
 	// ApplicationVndSwiftviewIcs vnd.swiftview-ics mime type.
 	ApplicationVndSwiftviewIcs = "application/vnd.swiftview-ics"
+	// ApplicationVndSybylMol2 vnd.sybyl.mol2 mime type.
+	ApplicationVndSybylMol2 = "application/vnd.sybyl.mol2"
 	// ApplicationVndSycleXML vnd.sycle+xml mime type.
 	ApplicationVndSycleXML = "application/vnd.sycle+xml"
 	// ApplicationVndSyftJSON vnd.syft+json mime type.
@@ -3137,6 +3153,10 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/auth-policy+xml":
 		return true
+	case "application/automationml-aml+xml":
+		return true
+	case "application/automationml-amlx+zip":
+		return true
 	case "application/bacnet-xdd+zip":
 		return true
 	case "application/batch-SMTP":
@@ -3198,6 +3218,8 @@ func IsApplication(mt string) bool {
 	case "application/coap-payload":
 		return true
 	case "application/commonground":
+		return true
+	case "application/concise-problem-details+cbor":
 		return true
 	case "application/conference-info+xml":
 		return true
@@ -3787,6 +3809,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/stix+json":
 		return true
+	case "application/swid+cbor":
+		return true
 	case "application/swid+xml":
 		return true
 	case "application/tamp-apex-update":
@@ -3828,6 +3852,8 @@ func IsApplication(mt string) bool {
 	case "application/tlsrpt+gzip":
 		return true
 	case "application/tlsrpt+json":
+		return true
+	case "application/tm+json":
 		return true
 	case "application/tnauthlist":
 		return true
@@ -4139,6 +4165,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.belightsoft.lhzd+zip":
 		return true
+	case "application/vnd.belightsoft.lhzl+zip":
+		return true
 	case "application/vnd.bint.med-content":
 		return true
 	case "application/vnd.biopax.rdf+xml":
@@ -4284,6 +4312,8 @@ func IsApplication(mt string) bool {
 	case "application/vnd.dart":
 		return true
 	case "application/vnd.data-vision.rdz":
+		return true
+	case "application/vnd.datalog":
 		return true
 	case "application/vnd.datapackage+json":
 		return true
@@ -5652,6 +5682,8 @@ func IsApplication(mt string) bool {
 	case "application/vnd.svd":
 		return true
 	case "application/vnd.swiftview-ics":
+		return true
+	case "application/vnd.sybyl.mol2":
 		return true
 	case "application/vnd.sycle+xml":
 		return true

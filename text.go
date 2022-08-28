@@ -44,6 +44,8 @@ const (
 	TextGff3 = "text/gff3"
 	// TextGrammarRefList grammar-ref-list mime type.
 	TextGrammarRefList = "text/grammar-ref-list"
+	// TextHl7v2 hl7v2 mime type.
+	TextHl7v2 = "text/hl7v2"
 	// TextHTML html mime type.
 	TextHTML = "text/html"
 	// TextJavascript javascript mime type.
@@ -126,6 +128,8 @@ const (
 	TextVndDvbSubtitle = "text/vnd.dvb.subtitle"
 	// TextVndEsmertecThemeDescriptor vnd.esmertec.theme-descriptor mime type.
 	TextVndEsmertecThemeDescriptor = "text/vnd.esmertec.theme-descriptor"
+	// TextVndExchangeable vnd.exchangeable mime type.
+	TextVndExchangeable = "text/vnd.exchangeable"
 	// TextVndFamilysearchGedcom vnd.familysearch.gedcom mime type.
 	TextVndFamilysearchGedcom = "text/vnd.familysearch.gedcom"
 	// TextVndFiclabFlt vnd.ficlab.flt mime type.
@@ -233,6 +237,8 @@ func IsText(mt string) bool {
 		return true
 	case "text/grammar-ref-list":
 		return true
+	case "text/hl7v2":
+		return true
 	case "text/html":
 		return true
 	case "text/javascript":
@@ -314,6 +320,8 @@ func IsText(mt string) bool {
 	case "text/vnd.dvb.subtitle":
 		return true
 	case "text/vnd.esmertec.theme-descriptor":
+		return true
+	case "text/vnd.exchangeable":
 		return true
 	case "text/vnd.familysearch.gedcom":
 		return true
