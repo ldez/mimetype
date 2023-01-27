@@ -184,6 +184,8 @@ const (
 	TextVndWapWmlscript = "text/vnd.wap.wmlscript"
 	// TextVtt vtt mime type.
 	TextVtt = "text/vtt"
+	// TextWgsl wgsl mime type.
+	TextWgsl = "text/wgsl"
 	// TextXML xml mime type.
 	TextXML = "text/xml"
 	// TextXMLExternalParsedEntity xml-external-parsed-entity mime type.
@@ -372,6 +374,8 @@ func IsText(mt string) bool {
 	case "text/vnd.wap.wmlscript":
 		return true
 	case "text/vtt":
+		return true
+	case "text/wgsl":
 		return true
 	case "text/xml":
 		return true

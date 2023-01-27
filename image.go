@@ -6,6 +6,8 @@ package mimetype
 const (
 	// ImageAces aces mime type.
 	ImageAces = "image/aces"
+	// ImageApng apng mime type.
+	ImageApng = "image/apng"
 	// ImageAvci avci mime type.
 	ImageAvci = "image/avci"
 	// ImageAvcs avcs mime type.
@@ -154,6 +156,8 @@ const (
 	ImageVndXiff = "image/vnd.xiff"
 	// ImageVndZbrushPcx vnd.zbrush.pcx mime type.
 	ImageVndZbrushPcx = "image/vnd.zbrush.pcx"
+	// ImageWebp webp mime type.
+	ImageWebp = "image/webp"
 	// ImageWmf wmf mime type.
 	ImageWmf = "image/wmf"
 	// ImageXEmfDeprecatedInFavorOfImageEmf x-emf - DEPRECATED in favor of image/emf mime type.
@@ -166,6 +170,8 @@ const (
 func IsImage(mt string) bool {
 	switch mt {
 	case "image/aces":
+		return true
+	case "image/apng":
 		return true
 	case "image/avci":
 		return true
@@ -314,6 +320,8 @@ func IsImage(mt string) bool {
 	case "image/vnd.xiff":
 		return true
 	case "image/vnd.zbrush.pcx":
+		return true
+	case "image/webp":
 		return true
 	case "image/wmf":
 		return true

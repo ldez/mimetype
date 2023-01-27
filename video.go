@@ -46,6 +46,8 @@ const (
 	VideoH264Svc = "video/H264-SVC"
 	// VideoH265 H265 mime type.
 	VideoH265 = "video/H265"
+	// VideoH266 H266 mime type.
+	VideoH266 = "video/H266"
 	// VideoIsoSegment iso.segment mime type.
 	VideoIsoSegment = "video/iso.segment"
 	// VideoJpeg JPEG mime type.
@@ -220,6 +222,8 @@ func IsVideo(mt string) bool {
 	case "video/H264-SVC":
 		return true
 	case "video/H265":
+		return true
+	case "video/H266":
 		return true
 	case "video/JPEG":
 		return true

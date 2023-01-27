@@ -14,6 +14,8 @@ const (
 	ModelGltfBinary = "model/gltf-binary"
 	// ModelGltfJSON gltf+json mime type.
 	ModelGltfJSON = "model/gltf+json"
+	// ModelJt JT mime type.
+	ModelJt = "model/JT"
 	// ModelIges iges mime type.
 	ModelIges = "model/iges"
 	// ModelMesh mesh mime type.
@@ -36,6 +38,8 @@ const (
 	ModelStl = "model/stl"
 	// ModelU3d u3d mime type.
 	ModelU3d = "model/u3d"
+	// ModelVndCld vnd.cld mime type.
+	ModelVndCld = "model/vnd.cld"
 	// ModelVndColladaXML vnd.collada+xml mime type.
 	ModelVndColladaXML = "model/vnd.collada+xml"
 	// ModelVndDwf vnd.dwf mime type.
@@ -64,6 +68,8 @@ const (
 	ModelVndRosetteAnnotatedDataModel = "model/vnd.rosette.annotated-data-model"
 	// ModelVndSapVds vnd.sap.vds mime type.
 	ModelVndSapVds = "model/vnd.sap.vds"
+	// ModelVndUsda vnd.usda mime type.
+	ModelVndUsda = "model/vnd.usda"
 	// ModelVndUsdzZip vnd.usdz+zip mime type.
 	ModelVndUsdzZip = "model/vnd.usdz+zip"
 	// ModelVndValveSourceCompiledMap vnd.valve.source.compiled-map mime type.
@@ -84,6 +90,8 @@ const (
 func IsModel(mt string) bool {
 	switch mt {
 	case "model/3mf":
+		return true
+	case "model/JT":
 		return true
 	case "model/e57":
 		return true
@@ -115,6 +123,8 @@ func IsModel(mt string) bool {
 		return true
 	case "model/u3d":
 		return true
+	case "model/vnd.cld":
+		return true
 	case "model/vnd.collada+xml":
 		return true
 	case "model/vnd.dwf":
@@ -142,6 +152,8 @@ func IsModel(mt string) bool {
 	case "model/vnd.rosette.annotated-data-model":
 		return true
 	case "model/vnd.sap.vds":
+		return true
+	case "model/vnd.usda":
 		return true
 	case "model/vnd.usdz+zip":
 		return true
