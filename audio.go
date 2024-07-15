@@ -91,6 +91,8 @@ const (
 	AudioEvs = "audio/EVS"
 	// AudioExample example mime type.
 	AudioExample = "audio/example"
+	// AudioFlac flac mime type.
+	AudioFlac = "audio/flac"
 	// AudioFlexfec flexfec mime type.
 	AudioFlexfec = "audio/flexfec"
 	// AudioFwdred fwdred mime type.
@@ -155,6 +157,8 @@ const (
 	AudioMelp2400 = "audio/MELP2400"
 	// AudioMhas mhas mime type.
 	AudioMhas = "audio/mhas"
+	// AudioMidiClip midi-clip mime type.
+	AudioMidiClip = "audio/midi-clip"
 	// AudioMobileXmf mobile-xmf mime type.
 	AudioMobileXmf = "audio/mobile-xmf"
 	// AudioMpa MPA mime type.
@@ -500,6 +504,8 @@ func IsAudio(mt string) bool {
 		return true
 	case "audio/example":
 		return true
+	case "audio/flac":
+		return true
 	case "audio/flexfec":
 		return true
 	case "audio/fwdred":
@@ -511,6 +517,8 @@ func IsAudio(mt string) bool {
 	case "audio/matroska":
 		return true
 	case "audio/mhas":
+		return true
+	case "audio/midi-clip":
 		return true
 	case "audio/mobile-xmf":
 		return true

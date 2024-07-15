@@ -61,6 +61,8 @@ const (
 	ImageJpm = "image/jpm"
 	// ImageJpx jpx mime type.
 	ImageJpx = "image/jpx"
+	// ImageJxl jxl mime type.
+	ImageJxl = "image/jxl"
 	// ImageJxr jxr mime type.
 	ImageJxr = "image/jxr"
 	// ImageJxrA jxrA mime type.
@@ -227,6 +229,8 @@ func IsImage(mt string) bool {
 	case "image/jpm":
 		return true
 	case "image/jpx":
+		return true
+	case "image/jxl":
 		return true
 	case "image/jxr":
 		return true

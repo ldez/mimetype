@@ -175,6 +175,8 @@ const (
 	TextVndSosi = "text/vnd.sosi"
 	// TextVndTrolltechLinguist vnd.trolltech.linguist mime type.
 	TextVndTrolltechLinguist = "text/vnd.trolltech.linguist"
+	// TextVndVcf vnd.vcf mime type.
+	TextVndVcf = "text/vnd.vcf"
 	// TextVndWapSi vnd.wap.si mime type.
 	TextVndWapSi = "text/vnd.wap.si"
 	// TextVndWapSl vnd.wap.sl mime type.
@@ -183,6 +185,8 @@ const (
 	TextVndWapWml = "text/vnd.wap.wml"
 	// TextVndWapWmlscript vnd.wap.wmlscript mime type.
 	TextVndWapWmlscript = "text/vnd.wap.wmlscript"
+	// TextVndZooKcl vnd.zoo.kcl mime type.
+	TextVndZooKcl = "text/vnd.zoo.kcl"
 	// TextVtt vtt mime type.
 	TextVtt = "text/vtt"
 	// TextWgsl wgsl mime type.
@@ -368,6 +372,8 @@ func IsText(mt string) bool {
 		return true
 	case "text/vnd.trolltech.linguist":
 		return true
+	case "text/vnd.vcf":
+		return true
 	case "text/vnd.wap.si":
 		return true
 	case "text/vnd.wap.sl":
@@ -375,6 +381,8 @@ func IsText(mt string) bool {
 	case "text/vnd.wap.wml":
 		return true
 	case "text/vnd.wap.wmlscript":
+		return true
+	case "text/vnd.zoo.kcl":
 		return true
 	case "text/vtt":
 		return true

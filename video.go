@@ -23,6 +23,8 @@ const (
 	VideoDv = "video/DV"
 	// VideoEncaprtp encaprtp mime type.
 	VideoEncaprtp = "video/encaprtp"
+	// VideoEvc evc mime type.
+	VideoEvc = "video/evc"
 	// VideoExample example mime type.
 	VideoExample = "video/example"
 	// VideoFfv1 FFV1 mime type.
@@ -247,6 +249,8 @@ func IsVideo(mt string) bool {
 	case "video/VP9":
 		return true
 	case "video/encaprtp":
+		return true
+	case "video/evc":
 		return true
 	case "video/example":
 		return true
