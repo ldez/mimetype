@@ -17,6 +17,8 @@ const (
 	ApplicationA2L = "application/A2L"
 	// ApplicationAceGroupcommCbor ace-groupcomm+cbor mime type.
 	ApplicationAceGroupcommCbor = "application/ace-groupcomm+cbor"
+	// ApplicationAceTrlCbor ace-trl+cbor mime type.
+	ApplicationAceTrlCbor = "application/ace-trl+cbor"
 	// ApplicationAceCbor ace+cbor mime type.
 	ApplicationAceCbor = "application/ace+cbor"
 	// ApplicationAceJSON ace+json mime type.
@@ -151,6 +153,8 @@ const (
 	ApplicationCdmiQueue = "application/cdmi-queue"
 	// ApplicationCdni cdni mime type.
 	ApplicationCdni = "application/cdni"
+	// ApplicationCeCbor ce+cbor mime type.
+	ApplicationCeCbor = "application/ce+cbor"
 	// ApplicationCea CEA mime type.
 	ApplicationCea = "application/CEA"
 	// ApplicationCea2018XML cea-2018+xml mime type.
@@ -163,6 +167,8 @@ const (
 	ApplicationCidEdhocCborSeq = "application/cid-edhoc+cbor-seq"
 	// ApplicationCityJSON city+json mime type.
 	ApplicationCityJSON = "application/city+json"
+	// ApplicationCityJSONSeq city+json-seq mime type.
+	ApplicationCityJSONSeq = "application/city+json-seq"
 	// ApplicationClr clr mime type.
 	ApplicationClr = "application/clr"
 	// ApplicationClueInfoXML clue_info+xml mime type.
@@ -255,6 +261,18 @@ const (
 	ApplicationDsscXML = "application/dssc+xml"
 	// ApplicationDvcs dvcs mime type.
 	ApplicationDvcs = "application/dvcs"
+	// ApplicationEatCwt eat+cwt mime type.
+	ApplicationEatCwt = "application/eat+cwt"
+	// ApplicationEatJwt eat+jwt mime type.
+	ApplicationEatJwt = "application/eat+jwt"
+	// ApplicationEatBunCbor eat-bun+cbor mime type.
+	ApplicationEatBunCbor = "application/eat-bun+cbor"
+	// ApplicationEatBunJSON eat-bun+json mime type.
+	ApplicationEatBunJSON = "application/eat-bun+json"
+	// ApplicationEatUcsCbor eat-ucs+cbor mime type.
+	ApplicationEatUcsCbor = "application/eat-ucs+cbor"
+	// ApplicationEatUcsJSON eat-ucs+json mime type.
+	ApplicationEatUcsJSON = "application/eat-ucs+json"
 	// ApplicationEcmascriptObsoletedInFavorOfTextJavascript ecmascript (OBSOLETED in favor of text/javascript) mime type.
 	ApplicationEcmascriptObsoletedInFavorOfTextJavascript = "application/ecmascript"
 	// ApplicationEdhocCborSeq edhoc+cbor-seq mime type.
@@ -297,6 +315,8 @@ const (
 	ApplicationEmotionmlXML = "application/emotionml+xml"
 	// ApplicationEncaprtp encaprtp mime type.
 	ApplicationEncaprtp = "application/encaprtp"
+	// ApplicationEntityStatementJwt entity-statement+jwt mime type.
+	ApplicationEntityStatementJwt = "application/entity-statement+jwt"
 	// ApplicationEppXML epp+xml mime type.
 	ApplicationEppXML = "application/epp+xml"
 	// ApplicationEpubZip epub+zip mime type.
@@ -341,6 +361,8 @@ const (
 	ApplicationGeoJSONSeq = "application/geo+json-seq"
 	// ApplicationGeopackageSqlite3 geopackage+sqlite3 mime type.
 	ApplicationGeopackageSqlite3 = "application/geopackage+sqlite3"
+	// ApplicationGeoposeJSON geopose+json mime type.
+	ApplicationGeoposeJSON = "application/geopose+json"
 	// ApplicationGeoxacmlJSON geoxacml+json mime type.
 	ApplicationGeoxacmlJSON = "application/geoxacml+json"
 	// ApplicationGeoxacmlXML geoxacml+xml mime type.
@@ -431,6 +453,8 @@ const (
 	ApplicationJwkJSON = "application/jwk+json"
 	// ApplicationJwkSetJSON jwk-set+json mime type.
 	ApplicationJwkSetJSON = "application/jwk-set+json"
+	// ApplicationApplicationJwkSetJwt application/jwk-set+jwt mime type.
+	ApplicationApplicationJwkSetJwt = "application/jwk-set+jwt"
 	// ApplicationJwt jwt mime type.
 	ApplicationJwt = "application/jwt"
 	// ApplicationKpmlRequestXML kpml-request+xml mime type.
@@ -679,6 +703,8 @@ const (
 	ApplicationProblemXML = "application/problem+xml"
 	// ApplicationProvenanceXML provenance+xml mime type.
 	ApplicationProvenanceXML = "application/provenance+xml"
+	// ApplicationProvidedClaimsJwt provided-claims+jwt mime type.
+	ApplicationProvidedClaimsJwt = "application/provided-claims+jwt"
 	// ApplicationPrsAlvestrandTitraxSheet prs.alvestrand.titrax-sheet mime type.
 	ApplicationPrsAlvestrandTitraxSheet = "application/prs.alvestrand.titrax-sheet"
 	// ApplicationPrsCww prs.cww mime type.
@@ -699,6 +725,8 @@ const (
 	ApplicationPrsImpliedObjectYaml = "application/prs.implied-object+yaml"
 	// ApplicationPrsImpliedStructure prs.implied-structure mime type.
 	ApplicationPrsImpliedStructure = "application/prs.implied-structure"
+	// ApplicationPrsMayfile prs.mayfile mime type.
+	ApplicationPrsMayfile = "application/prs.mayfile"
 	// ApplicationPrsNprend prs.nprend mime type.
 	ApplicationPrsNprend = "application/prs.nprend"
 	// ApplicationPrsPlucker prs.plucker mime type.
@@ -735,6 +763,8 @@ const (
 	ApplicationRemotePrintingObsolete = "application/remote-printing"
 	// ApplicationReputonJSON reputon+json mime type.
 	ApplicationReputonJSON = "application/reputon+json"
+	// ApplicationApplicationResolveResponseJwt application/resolve-response+jwt mime type.
+	ApplicationApplicationResolveResponseJwt = "application/resolve-response+jwt"
 	// ApplicationResourceListsDiffXML resource-lists-diff+xml mime type.
 	ApplicationResourceListsDiffXML = "application/resource-lists-diff+xml"
 	// ApplicationResourceListsXML resource-lists+xml mime type.
@@ -873,6 +903,8 @@ const (
 	ApplicationSrgsXML = "application/srgs+xml"
 	// ApplicationSruXML sru+xml mime type.
 	ApplicationSruXML = "application/sru+xml"
+	// ApplicationSslkeylogfile sslkeylogfile mime type.
+	ApplicationSslkeylogfile = "application/sslkeylogfile"
 	// ApplicationSsmlXML ssml+xml mime type.
 	ApplicationSsmlXML = "application/ssml+xml"
 	// ApplicationSt211041 ST2110-41 mime type.
@@ -931,12 +963,22 @@ const (
 	ApplicationTmJSON = "application/tm+json"
 	// ApplicationTnauthlist tnauthlist mime type.
 	ApplicationTnauthlist = "application/tnauthlist"
+	// ApplicationTocCbor toc+cbor mime type.
+	ApplicationTocCbor = "application/toc+cbor"
 	// ApplicationTokenIntrospectionJwt token-introspection+jwt mime type.
 	ApplicationTokenIntrospectionJwt = "application/token-introspection+jwt"
+	// ApplicationToml toml mime type.
+	ApplicationToml = "application/toml"
 	// ApplicationTrickleIceSdpfrag trickle-ice-sdpfrag mime type.
 	ApplicationTrickleIceSdpfrag = "application/trickle-ice-sdpfrag"
 	// ApplicationTrig trig mime type.
 	ApplicationTrig = "application/trig"
+	// ApplicationApplicationTrustChainJSON application/trust-chain+json mime type.
+	ApplicationApplicationTrustChainJSON = "application/trust-chain+json"
+	// ApplicationApplicationTrustMarkJwt application/trust-mark+jwt mime type.
+	ApplicationApplicationTrustMarkJwt = "application/trust-mark+jwt"
+	// ApplicationApplicationTrustMarkDelegationJwt application/trust-mark-delegation+jwt mime type.
+	ApplicationApplicationTrustMarkDelegationJwt = "application/trust-mark-delegation+jwt"
 	// ApplicationTtmlXML ttml+xml mime type.
 	ApplicationTtmlXML = "application/ttml+xml"
 	// ApplicationTveTrigger tve-trigger mime type.
@@ -945,6 +987,10 @@ const (
 	ApplicationTzif = "application/tzif"
 	// ApplicationTzifLeap tzif-leap mime type.
 	ApplicationTzifLeap = "application/tzif-leap"
+	// ApplicationUccsCbor uccs+cbor mime type.
+	ApplicationUccsCbor = "application/uccs+cbor"
+	// ApplicationUjcsJSON ujcs+json mime type.
+	ApplicationUjcsJSON = "application/ujcs+json"
 	// ApplicationUlpfec ulpfec mime type.
 	ApplicationUlpfec = "application/ulpfec"
 	// ApplicationUrcGrpsheetXML urc-grpsheet+xml mime type.
@@ -957,6 +1003,10 @@ const (
 	ApplicationUrcUisocketdescXML = "application/urc-uisocketdesc+xml"
 	// ApplicationVc vc mime type.
 	ApplicationVc = "application/vc"
+	// ApplicationVcCose vc+cose mime type.
+	ApplicationVcCose = "application/vc+cose"
+	// ApplicationVcJwt vc+jwt mime type.
+	ApplicationVcJwt = "application/vc+jwt"
 	// ApplicationVcardJSON vcard+json mime type.
 	ApplicationVcardJSON = "application/vcard+json"
 	// ApplicationVcardXML vcard+xml mime type.
@@ -973,6 +1023,10 @@ const (
 	ApplicationVnd3gpp5gsa2x = "application/vnd.3gpp.5gsa2x"
 	// ApplicationVnd3gpp5gsa2xLocalServiceInformation vnd.3gpp.5gsa2x-local-service-information mime type.
 	ApplicationVnd3gpp5gsa2xLocalServiceInformation = "application/vnd.3gpp.5gsa2x-local-service-information"
+	// ApplicationVnd3gpp5gsv2x vnd.3gpp.5gsv2x mime type.
+	ApplicationVnd3gpp5gsv2x = "application/vnd.3gpp.5gsv2x"
+	// ApplicationVnd3gpp5gsv2xLocalServiceInformation vnd.3gpp.5gsv2x-local-service-information mime type.
+	ApplicationVnd3gpp5gsv2xLocalServiceInformation = "application/vnd.3gpp.5gsv2x-local-service-information"
 	// ApplicationVnd3gppAccessTransferEventsXML vnd.3gpp.access-transfer-events+xml mime type.
 	ApplicationVnd3gppAccessTransferEventsXML = "application/vnd.3gpp.access-transfer-events+xml"
 	// ApplicationVnd3gppBsfXML vnd.3gpp.bsf+xml mime type.
@@ -1429,6 +1483,8 @@ const (
 	ApplicationVndDataresourceJSON = "application/vnd.dataresource+json"
 	// ApplicationVndDbf vnd.dbf mime type.
 	ApplicationVndDbf = "application/vnd.dbf"
+	// ApplicationVndDcmpXML vnd.dcmp+xml mime type.
+	ApplicationVndDcmpXML = "application/vnd.dcmp+xml"
 	// ApplicationVndDebianBinaryPackage vnd.debian.binary-package mime type.
 	ApplicationVndDebianBinaryPackage = "application/vnd.debian.binary-package"
 	// ApplicationVndDeceData vnd.dece.data mime type.
@@ -1639,6 +1695,8 @@ const (
 	ApplicationVndFdsnMseed = "application/vnd.fdsn.mseed"
 	// ApplicationVndFdsnSeed vnd.fdsn.seed mime type.
 	ApplicationVndFdsnSeed = "application/vnd.fdsn.seed"
+	// ApplicationVndFdsnStationxmlXML vnd.fdsn.stationxml+xml mime type.
+	ApplicationVndFdsnStationxmlXML = "application/vnd.fdsn.stationxml+xml"
 	// ApplicationVndFfsns vnd.ffsns mime type.
 	ApplicationVndFfsns = "application/vnd.ffsns"
 	// ApplicationVndFiclabFlbZip vnd.ficlab.flb+zip mime type.
@@ -1733,6 +1791,8 @@ const (
 	ApplicationVndGeocubeXMLObsoletedByRequest = "application/vnd.geocube+xml"
 	// ApplicationVndGeogebraFile vnd.geogebra.file mime type.
 	ApplicationVndGeogebraFile = "application/vnd.geogebra.file"
+	// ApplicationVndGeogebraPinboard vnd.geogebra.pinboard mime type.
+	ApplicationVndGeogebraPinboard = "application/vnd.geogebra.pinboard"
 	// ApplicationVndGeogebraSlides vnd.geogebra.slides mime type.
 	ApplicationVndGeogebraSlides = "application/vnd.geogebra.slides"
 	// ApplicationVndGeogebraTool vnd.geogebra.tool mime type.
@@ -1977,8 +2037,14 @@ const (
 	ApplicationVndKdeKspread = "application/vnd.kde.kspread"
 	// ApplicationVndKdeKword vnd.kde.kword mime type.
 	ApplicationVndKdeKword = "application/vnd.kde.kword"
+	// ApplicationVndKdl vnd.kdl mime type.
+	ApplicationVndKdl = "application/vnd.kdl"
 	// ApplicationVndKenameaapp vnd.kenameaapp mime type.
 	ApplicationVndKenameaapp = "application/vnd.kenameaapp"
+	// ApplicationVndKeymanKmpZip vnd.keyman.kmp+zip mime type.
+	ApplicationVndKeymanKmpZip = "application/vnd.keyman.kmp+zip"
+	// ApplicationVndKeymanKmx vnd.keyman.kmx mime type.
+	ApplicationVndKeymanKmx = "application/vnd.keyman.kmx"
 	// ApplicationVndKidspiration vnd.kidspiration mime type.
 	ApplicationVndKidspiration = "application/vnd.kidspiration"
 	// ApplicationVndKinar vnd.Kinar mime type.
@@ -2485,6 +2551,8 @@ const (
 	ApplicationVndOpenstreetmapDataXML = "application/vnd.openstreetmap.data+xml"
 	// ApplicationVndOpentimestampsOts vnd.opentimestamps.ots mime type.
 	ApplicationVndOpentimestampsOts = "application/vnd.opentimestamps.ots"
+	// ApplicationVndOpenvpiDspxJSON vnd.openvpi.dspx+json mime type.
+	ApplicationVndOpenvpiDspxJSON = "application/vnd.openvpi.dspx+json"
 	// ApplicationVndOpenxmlformatsOfficedocumentCustomPropertiesXML vnd.openxmlformats-officedocument.custom-properties+xml mime type.
 	ApplicationVndOpenxmlformatsOfficedocumentCustomPropertiesXML = "application/vnd.openxmlformats-officedocument.custom-properties+xml"
 	// ApplicationVndOpenxmlformatsOfficedocumentCustomXMLPropertiesXML vnd.openxmlformats-officedocument.customXmlProperties+xml mime type.
@@ -2845,6 +2913,8 @@ const (
 	ApplicationVndSimTechMindMapper = "application/vnd.SimTech-MindMapper"
 	// ApplicationVndSirenJSON vnd.siren+json mime type.
 	ApplicationVndSirenJSON = "application/vnd.siren+json"
+	// ApplicationVndSketchometry vnd.sketchometry mime type.
+	ApplicationVndSketchometry = "application/vnd.sketchometry"
 	// ApplicationVndSmaf vnd.smaf mime type.
 	ApplicationVndSmaf = "application/vnd.smaf"
 	// ApplicationVndSmartNotebook vnd.smart.notebook mime type.
@@ -2939,6 +3009,8 @@ const (
 	ApplicationVndUbisoftWebplayer = "application/vnd.ubisoft.webplayer"
 	// ApplicationVndUfdl vnd.ufdl mime type.
 	ApplicationVndUfdl = "application/vnd.ufdl"
+	// ApplicationVndUicOsdmJSON vnd.uic.osdm+json mime type.
+	ApplicationVndUicOsdmJSON = "application/vnd.uic.osdm+json"
 	// ApplicationVndUiqTheme vnd.uiq.theme mime type.
 	ApplicationVndUiqTheme = "application/vnd.uiq.theme"
 	// ApplicationVndUmajin vnd.umajin mime type.
@@ -2985,6 +3057,10 @@ const (
 	ApplicationVndVectorworks = "application/vnd.vectorworks"
 	// ApplicationVndVelJSON vnd.vel+json mime type.
 	ApplicationVndVelJSON = "application/vnd.vel+json"
+	// ApplicationVndVeraisonTsmReportCbor vnd.veraison.tsm-report+cbor mime type.
+	ApplicationVndVeraisonTsmReportCbor = "application/vnd.veraison.tsm-report+cbor"
+	// ApplicationVndVeraisonTsmReportJSON vnd.veraison.tsm-report+json mime type.
+	ApplicationVndVeraisonTsmReportJSON = "application/vnd.veraison.tsm-report+json"
 	// ApplicationVndVerimatrixVcas vnd.verimatrix.vcas mime type.
 	ApplicationVndVerimatrixVcas = "application/vnd.verimatrix.vcas"
 	// ApplicationVndVeritoneAionJSON vnd.veritone.aion+json mime type.
@@ -3001,6 +3077,8 @@ const (
 	ApplicationVndVisionary = "application/vnd.visionary"
 	// ApplicationVndVividenceScriptfile vnd.vividence.scriptfile mime type.
 	ApplicationVndVividenceScriptfile = "application/vnd.vividence.scriptfile"
+	// ApplicationVndVocalshaperVsp4 vnd.vocalshaper.vsp4 mime type.
+	ApplicationVndVocalshaperVsp4 = "application/vnd.vocalshaper.vsp4"
 	// ApplicationVndVsf vnd.vsf mime type.
 	ApplicationVndVsf = "application/vnd.vsf"
 	// ApplicationVndWapSic vnd.wap.sic mime type.
@@ -3055,6 +3133,8 @@ const (
 	ApplicationVndXacmlJSON = "application/vnd.xacml+json"
 	// ApplicationVndXara vnd.xara mime type.
 	ApplicationVndXara = "application/vnd.xara"
+	// ApplicationVndXarinCpj vnd.xarin.cpj mime type.
+	ApplicationVndXarinCpj = "application/vnd.xarin.cpj"
 	// ApplicationVndXecretsEncrypted vnd.xecrets-encrypted mime type.
 	ApplicationVndXecretsEncrypted = "application/vnd.xecrets-encrypted"
 	// ApplicationVndXfdl vnd.xfdl mime type.
@@ -3109,6 +3189,10 @@ const (
 	ApplicationVoucherCmsJSON = "application/voucher-cms+json"
 	// ApplicationVp vp mime type.
 	ApplicationVp = "application/vp"
+	// ApplicationVpCose vp+cose mime type.
+	ApplicationVpCose = "application/vp+cose"
+	// ApplicationVpJwt vp+jwt mime type.
+	ApplicationVpJwt = "application/vp+jwt"
 	// ApplicationVqRtcpxr vq-rtcpxr mime type.
 	ApplicationVqRtcpxr = "application/vq-rtcpxr"
 	// ApplicationWasm wasm mime type.
@@ -3304,6 +3388,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/ace-groupcomm+cbor":
 		return true
+	case "application/ace-trl+cbor":
+		return true
 	case "application/activemessage":
 		return true
 	case "application/activity+json":
@@ -3422,6 +3508,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/cdni":
 		return true
+	case "application/ce+cbor":
+		return true
 	case "application/cea-2018+xml":
 		return true
 	case "application/cellml+xml":
@@ -3431,6 +3519,8 @@ func IsApplication(mt string) bool {
 	case "application/cid-edhoc+cbor-seq":
 		return true
 	case "application/city+json":
+		return true
+	case "application/city+json-seq":
 		return true
 	case "application/clr":
 		return true
@@ -3516,6 +3606,18 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/dvcs":
 		return true
+	case "application/eat+cwt":
+		return true
+	case "application/eat+jwt":
+		return true
+	case "application/eat-bun+cbor":
+		return true
+	case "application/eat-bun+json":
+		return true
+	case "application/eat-ucs+cbor":
+		return true
+	case "application/eat-ucs+json":
+		return true
 	case "application/ecmascript":
 		return true
 	case "application/edhoc+cbor-seq":
@@ -3531,6 +3633,8 @@ func IsApplication(mt string) bool {
 	case "application/emotionml+xml":
 		return true
 	case "application/encaprtp":
+		return true
+	case "application/entity-statement+jwt":
 		return true
 	case "application/epp+xml":
 		return true
@@ -3575,6 +3679,8 @@ func IsApplication(mt string) bool {
 	case "application/geo+json-seq":
 		return true
 	case "application/geopackage+sqlite3":
+		return true
+	case "application/geopose+json":
 		return true
 	case "application/geoxacml+json":
 		return true
@@ -3659,6 +3765,8 @@ func IsApplication(mt string) bool {
 	case "application/jwk+json":
 		return true
 	case "application/jwk-set+json":
+		return true
+	case "application/jwk-set+jwt":
 		return true
 	case "application/jwt":
 		return true
@@ -3898,6 +4006,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/provenance+xml":
 		return true
+	case "application/provided-claims+jwt":
+		return true
 	case "application/prs.alvestrand.titrax-sheet":
 		return true
 	case "application/prs.cww":
@@ -3917,6 +4027,8 @@ func IsApplication(mt string) bool {
 	case "application/prs.implied-object+yaml":
 		return true
 	case "application/prs.implied-structure":
+		return true
+	case "application/prs.mayfile":
 		return true
 	case "application/prs.nprend":
 		return true
@@ -3945,6 +4057,8 @@ func IsApplication(mt string) bool {
 	case "application/remote-printing":
 		return true
 	case "application/reputon+json":
+		return true
+	case "application/resolve-response+jwt":
 		return true
 	case "application/resource-lists+xml":
 		return true
@@ -4088,6 +4202,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/sru+xml":
 		return true
+	case "application/sslkeylogfile":
+		return true
 	case "application/ssml+xml":
 		return true
 	case "application/stix+json":
@@ -4142,11 +4258,21 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/tnauthlist":
 		return true
+	case "application/toc+cbor":
+		return true
 	case "application/token-introspection+jwt":
+		return true
+	case "application/toml":
 		return true
 	case "application/trickle-ice-sdpfrag":
 		return true
 	case "application/trig":
+		return true
+	case "application/trust-chain+json":
+		return true
+	case "application/trust-mark+jwt":
+		return true
+	case "application/trust-mark-delegation+jwt":
 		return true
 	case "application/ttml+xml":
 		return true
@@ -4155,6 +4281,10 @@ func IsApplication(mt string) bool {
 	case "application/tzif":
 		return true
 	case "application/tzif-leap":
+		return true
+	case "application/uccs+cbor":
+		return true
+	case "application/ujcs+json":
 		return true
 	case "application/ulpfec":
 		return true
@@ -4167,6 +4297,10 @@ func IsApplication(mt string) bool {
 	case "application/urc-uisocketdesc+xml":
 		return true
 	case "application/vc":
+		return true
+	case "application/vc+cose":
+		return true
+	case "application/vc+jwt":
 		return true
 	case "application/vcard+json":
 		return true
@@ -4197,6 +4331,10 @@ func IsApplication(mt string) bool {
 	case "application/vnd.3gpp.5gsa2x":
 		return true
 	case "application/vnd.3gpp.5gsa2x-local-service-information":
+		return true
+	case "application/vnd.3gpp.5gsv2x":
+		return true
+	case "application/vnd.3gpp.5gsv2x-local-service-information":
 		return true
 	case "application/vnd.3gpp.GMOP+xml":
 		return true
@@ -4668,6 +4806,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.dbf":
 		return true
+	case "application/vnd.dcmp+xml":
+		return true
 	case "application/vnd.debian.binary-package":
 		return true
 	case "application/vnd.dece.data":
@@ -4878,6 +5018,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.fdsn.seed":
 		return true
+	case "application/vnd.fdsn.stationxml+xml":
+		return true
 	case "application/vnd.ffsns":
 		return true
 	case "application/vnd.ficlab.flb+zip":
@@ -4969,6 +5111,8 @@ func IsApplication(mt string) bool {
 	case "application/vnd.geocube+xml":
 		return true
 	case "application/vnd.geogebra.file":
+		return true
+	case "application/vnd.geogebra.pinboard":
 		return true
 	case "application/vnd.geogebra.slides":
 		return true
@@ -5212,7 +5356,13 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.kde.kword":
 		return true
+	case "application/vnd.kdl":
+		return true
 	case "application/vnd.kenameaapp":
+		return true
+	case "application/vnd.keyman.kmp+zip":
+		return true
+	case "application/vnd.keyman.kmx":
 		return true
 	case "application/vnd.kidspiration":
 		return true
@@ -5702,6 +5852,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.opentimestamps.ots":
 		return true
+	case "application/vnd.openvpi.dspx+json":
+		return true
 	case "application/vnd.openxmlformats-officedocument.custom-properties+xml":
 		return true
 	case "application/vnd.openxmlformats-officedocument.customXmlProperties+xml":
@@ -6056,6 +6208,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.siren+json":
 		return true
+	case "application/vnd.sketchometry":
+		return true
 	case "application/vnd.smaf":
 		return true
 	case "application/vnd.smart.notebook":
@@ -6150,6 +6304,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.ufdl":
 		return true
+	case "application/vnd.uic.osdm+json":
+		return true
 	case "application/vnd.uiq.theme":
 		return true
 	case "application/vnd.umajin":
@@ -6196,6 +6352,10 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.vel+json":
 		return true
+	case "application/vnd.veraison.tsm-report+cbor":
+		return true
+	case "application/vnd.veraison.tsm-report+json":
+		return true
 	case "application/vnd.verimatrix.vcas":
 		return true
 	case "application/vnd.veritone.aion+json":
@@ -6211,6 +6371,8 @@ func IsApplication(mt string) bool {
 	case "application/vnd.visionary":
 		return true
 	case "application/vnd.vividence.scriptfile":
+		return true
+	case "application/vnd.vocalshaper.vsp4":
 		return true
 	case "application/vnd.vsf":
 		return true
@@ -6266,6 +6428,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/vnd.xara":
 		return true
+	case "application/vnd.xarin.cpj":
+		return true
 	case "application/vnd.xecrets-encrypted":
 		return true
 	case "application/vnd.xfdl":
@@ -6319,6 +6483,10 @@ func IsApplication(mt string) bool {
 	case "application/voucher-cms+json":
 		return true
 	case "application/vp":
+		return true
+	case "application/vp+cose":
+		return true
+	case "application/vp+jwt":
 		return true
 	case "application/vq-rtcpxr":
 		return true

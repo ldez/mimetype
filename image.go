@@ -41,12 +41,16 @@ const (
 	ImageHeifSequence = "image/heif-sequence"
 	// ImageHej2k hej2k mime type.
 	ImageHej2k = "image/hej2k"
-	// ImageHsj2 hsj2 mime type.
-	ImageHsj2 = "image/hsj2"
+	// ImageHsj2Obsolete hsj2 (OBSOLETE) mime type.
+	ImageHsj2Obsolete = "image/hsj2"
 	// ImageIef ief mime type.
 	ImageIef = "image/ief"
 	// ImageJ2c j2c mime type.
 	ImageJ2c = "image/j2c"
+	// ImageJaii jaii mime type.
+	ImageJaii = "image/jaii"
+	// ImageJais jais mime type.
+	ImageJais = "image/jais"
 	// ImageJls jls mime type.
 	ImageJls = "image/jls"
 	// ImageJp2 jp2 mime type.
@@ -164,9 +168,9 @@ const (
 	// ImageWmf wmf mime type.
 	ImageWmf = "image/wmf"
 	// ImageXEmfDeprecatedInFavorOfImageEmf x-emf - DEPRECATED in favor of image/emf mime type.
-	ImageXEmfDeprecatedInFavorOfImageEmf = "image/emf"
+	ImageXEmfDeprecatedInFavorOfImageEmf = "image/x-emf"
 	// ImageXWmfDeprecatedInFavorOfImageWmf x-wmf - DEPRECATED in favor of image/wmf mime type.
-	ImageXWmfDeprecatedInFavorOfImageWmf = "image/wmf"
+	ImageXWmfDeprecatedInFavorOfImageWmf = "image/x-wmf"
 )
 
 // IsImage checks if the mime types is image.
@@ -215,6 +219,10 @@ func IsImage(mt string) bool {
 	case "image/ief":
 		return true
 	case "image/j2c":
+		return true
+	case "image/jaii":
+		return true
+	case "image/jais":
 		return true
 	case "image/jls":
 		return true
@@ -331,6 +339,10 @@ func IsImage(mt string) bool {
 	case "image/webp":
 		return true
 	case "image/wmf":
+		return true
+	case "image/x-emf":
+		return true
+	case "image/x-wmf":
 		return true
 	default:
 		return false
