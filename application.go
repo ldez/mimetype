@@ -3187,6 +3187,8 @@ const (
 	ApplicationVoicexmlXML = "application/voicexml+xml"
 	// ApplicationVoucherCmsJSON voucher-cms+json mime type.
 	ApplicationVoucherCmsJSON = "application/voucher-cms+json"
+	// ApplicationVoucherJwsJSON voucher-jws+json mime type.
+	ApplicationVoucherJwsJSON = "application/voucher-jws+json"
 	// ApplicationVp vp mime type.
 	ApplicationVp = "application/vp"
 	// ApplicationVpCose vp+cose mime type.
@@ -6481,6 +6483,8 @@ func IsApplication(mt string) bool {
 	case "application/voicexml+xml":
 		return true
 	case "application/voucher-cms+json":
+		return true
+	case "application/voucher-jws+json":
 		return true
 	case "application/vp":
 		return true

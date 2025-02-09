@@ -165,6 +165,8 @@ const (
 	VideoVndNokiaVideovoip = "video/vnd.nokia.videovoip"
 	// VideoVndObjectvideo vnd.objectvideo mime type.
 	VideoVndObjectvideo = "video/vnd.objectvideo"
+	// VideoVndPlanar vnd.planar mime type.
+	VideoVndPlanar = "video/vnd.planar"
 	// VideoVndRadgamettoolsBink vnd.radgamettools.bink mime type.
 	VideoVndRadgamettoolsBink = "video/vnd.radgamettools.bink"
 	// VideoVndRadgamettoolsSmacker vnd.radgamettools.smacker mime type.
@@ -357,6 +359,8 @@ func IsVideo(mt string) bool {
 	case "video/vnd.nokia.videovoip":
 		return true
 	case "video/vnd.objectvideo":
+		return true
+	case "video/vnd.planar":
 		return true
 	case "video/vnd.radgamettools.bink":
 		return true
