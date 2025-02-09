@@ -22,6 +22,7 @@ func main() {
 	fmt.Println(mimetype.IsApplication("foobar"))
 	fmt.Println(mimetype.IsAudio("foobar"))
 	fmt.Println(mimetype.IsFont("foobar"))
+	fmt.Println(mimetype.IsHaptics("foobar"))
 	fmt.Println(mimetype.IsImage("foobar"))
 	fmt.Println(mimetype.IsMessage("foobar"))
 	fmt.Println(mimetype.IsModel("foobar"))

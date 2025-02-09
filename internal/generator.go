@@ -51,6 +51,7 @@ func main() {
 		"audio",
 		"font",
 		"image",
+		"haptics",
 		"message",
 		"model",
 		"multipart",
@@ -62,7 +63,7 @@ func main() {
 		log.Println(document)
 		err := generate(document)
 		if err != nil {
-			log.Fatal(err)
+			log.Fatalf("document: %s: %v", document, err)
 		}
 	}
 }
