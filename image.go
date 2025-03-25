@@ -107,6 +107,8 @@ const (
 	ImageVndAdobePhotoshop = "image/vnd.adobe.photoshop"
 	// ImageVndAirzipAcceleratorAzv vnd.airzip.accelerator.azv mime type.
 	ImageVndAirzipAcceleratorAzv = "image/vnd.airzip.accelerator.azv"
+	// ImageVndClip vnd.clip mime type.
+	ImageVndClip = "image/vnd.clip"
 	// ImageVndCnsInf2 vnd.cns.inf2 mime type.
 	ImageVndCnsInf2 = "image/vnd.cns.inf2"
 	// ImageVndDeceGraphic vnd.dece.graphic mime type.
@@ -279,6 +281,8 @@ func IsImage(mt string) bool {
 	case "image/vnd.adobe.photoshop":
 		return true
 	case "image/vnd.airzip.accelerator.azv":
+		return true
+	case "image/vnd.clip":
 		return true
 	case "image/vnd.cns.inf2":
 		return true

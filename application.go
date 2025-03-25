@@ -179,6 +179,8 @@ const (
 	ApplicationCms = "application/cms"
 	// ApplicationCnrpXML cnrp+xml mime type.
 	ApplicationCnrpXML = "application/cnrp+xml"
+	// ApplicationCoapEap coap-eap mime type.
+	ApplicationCoapEap = "application/coap-eap"
 	// ApplicationCoapGroupJSON coap-group+json mime type.
 	ApplicationCoapGroupJSON = "application/coap-group+json"
 	// ApplicationCoapPayload coap-payload mime type.
@@ -239,6 +241,8 @@ const (
 	ApplicationDicomJSON = "application/dicom+json"
 	// ApplicationDicomXML dicom+xml mime type.
 	ApplicationDicomXML = "application/dicom+xml"
+	// ApplicationDid did mime type.
+	ApplicationDid = "application/did"
 	// ApplicationDii DII mime type.
 	ApplicationDii = "application/DII"
 	// ApplicationDit DIT mime type.
@@ -3534,6 +3538,8 @@ func IsApplication(mt string) bool {
 		return true
 	case "application/cnrp+xml":
 		return true
+	case "application/coap-eap":
+		return true
 	case "application/coap-group+json":
 		return true
 	case "application/coap-payload":
@@ -3589,6 +3595,8 @@ func IsApplication(mt string) bool {
 	case "application/dicom+json":
 		return true
 	case "application/dicom+xml":
+		return true
+	case "application/did":
 		return true
 	case "application/dns":
 		return true

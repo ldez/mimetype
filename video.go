@@ -57,6 +57,8 @@ const (
 	VideoJpeg2000 = "video/jpeg2000"
 	// VideoJxsv jxsv mime type.
 	VideoJxsv = "video/jxsv"
+	// VideoLottieJSON lottie+json mime type.
+	VideoLottieJSON = "video/lottie+json"
 	// VideoMatroska matroska mime type.
 	VideoMatroska = "video/matroska"
 	// VideoMatroska3d matroska-3d mime type.
@@ -263,6 +265,8 @@ func IsVideo(mt string) bool {
 	case "video/jpeg2000":
 		return true
 	case "video/jxsv":
+		return true
+	case "video/lottie+json":
 		return true
 	case "video/matroska":
 		return true
