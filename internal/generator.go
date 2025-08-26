@@ -61,6 +61,7 @@ func main() {
 
 	for _, document := range documents {
 		log.Println(document)
+
 		err := generate(document)
 		if err != nil {
 			log.Fatalf("document: %s: %v", document, err)
@@ -75,6 +76,7 @@ func generate(document string) error {
 	if err != nil {
 		return err
 	}
+
 	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode != http.StatusOK {
@@ -96,6 +98,7 @@ func generate(document string) error {
 		if r == "" {
 			r = document + "/" + record[0]
 		}
+
 		uniq[r] = struct{}{}
 	}
 
@@ -107,7 +110,7 @@ func generate(document string) error {
 
 	sort.Strings(mts)
 
-	model := map[string]interface{}{
+	model := map[string]any{
 		"In":            records[1:],
 		"Document":      document,
 		"MimeTemplates": mts,
@@ -131,19 +134,21 @@ func generate(document string) error {
 	return nil
 }
 
-func generateFileContent(document string, model map[string]interface{}) (string, error) {
+func generateFileContent(document string, model map[string]any) (string, error) {
 	funcMap := template.FuncMap{
 		"constName":  constName,
 		"toGoPascal": strcase.ToGoPascal,
 	}
 
 	base := template.New(document + ".go")
+
 	tmpl, err := base.Funcs(funcMap).Parse(mtTemplate)
 	if err != nil {
 		return "", fmt.Errorf("parse template: %w", err)
 	}
 
 	b := &bytes.Buffer{}
+
 	err = tmpl.Execute(b, model)
 	if err != nil {
 		return "", fmt.Errorf("execute template: %w", err)
