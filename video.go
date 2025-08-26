@@ -55,6 +55,8 @@ const (
 	VideoJpeg = "video/JPEG"
 	// VideoJpeg2000 jpeg2000 mime type.
 	VideoJpeg2000 = "video/jpeg2000"
+	// VideoJpeg2000Scl jpeg2000-scl mime type.
+	VideoJpeg2000Scl = "video/jpeg2000-scl"
 	// VideoJxsv jxsv mime type.
 	VideoJxsv = "video/jxsv"
 	// VideoLottieJSON lottie+json mime type.
@@ -113,6 +115,8 @@ const (
 	VideoVc1 = "video/vc1"
 	// VideoVc2 vc2 mime type.
 	VideoVc2 = "video/vc2"
+	// VideoVndBlockfactFactv vnd.blockfact.factv mime type.
+	VideoVndBlockfactFactv = "video/vnd.blockfact.factv"
 	// VideoVndCctv vnd.CCTV mime type.
 	VideoVndCctv = "video/vnd.CCTV"
 	// VideoVndDeceHd vnd.dece.hd mime type.
@@ -264,6 +268,8 @@ func IsVideo(mt string) bool {
 		return true
 	case "video/jpeg2000":
 		return true
+	case "video/jpeg2000-scl":
+		return true
 	case "video/jxsv":
 		return true
 	case "video/lottie+json":
@@ -311,6 +317,8 @@ func IsVideo(mt string) bool {
 	case "video/vc2":
 		return true
 	case "video/vnd.CCTV":
+		return true
+	case "video/vnd.blockfact.factv":
 		return true
 	case "video/vnd.dece.hd":
 		return true

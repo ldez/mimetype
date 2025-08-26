@@ -247,6 +247,8 @@ const (
 	AudioVnd4Sb = "audio/vnd.4SB"
 	// AudioVndAudiokoz vnd.audiokoz mime type.
 	AudioVndAudiokoz = "audio/vnd.audiokoz"
+	// AudioVndBlockfactFacta vnd.blockfact.facta mime type.
+	AudioVndBlockfactFacta = "audio/vnd.blockfact.facta"
 	// AudioVndCelp vnd.CELP mime type.
 	AudioVndCelp = "audio/vnd.CELP"
 	// AudioVndCiscoNse vnd.cisco.nse mime type.
@@ -575,6 +577,8 @@ func IsAudio(mt string) bool {
 	case "audio/vnd.CELP":
 		return true
 	case "audio/vnd.audiokoz":
+		return true
+	case "audio/vnd.blockfact.facta":
 		return true
 	case "audio/vnd.cisco.nse":
 		return true

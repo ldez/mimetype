@@ -173,6 +173,8 @@ const (
 	TextVndSunJ2meAppDescriptor = "text/vnd.sun.j2me.app-descriptor"
 	// TextVndSosi vnd.sosi mime type.
 	TextVndSosi = "text/vnd.sosi"
+	// TextVndTypst vnd.typst mime type.
+	TextVndTypst = "text/vnd.typst"
 	// TextVndTrolltechLinguist vnd.trolltech.linguist mime type.
 	TextVndTrolltechLinguist = "text/vnd.trolltech.linguist"
 	// TextVndVcf vnd.vcf mime type.
@@ -371,6 +373,8 @@ func IsText(mt string) bool {
 	case "text/vnd.sun.j2me.app-descriptor":
 		return true
 	case "text/vnd.trolltech.linguist":
+		return true
+	case "text/vnd.typst":
 		return true
 	case "text/vnd.vcf":
 		return true
