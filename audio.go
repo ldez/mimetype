@@ -213,6 +213,8 @@ const (
 	AudioSmvQcp = "audio/SMV-QCP"
 	// AudioSofa sofa mime type.
 	AudioSofa = "audio/sofa"
+	// AudioSoundfont soundfont mime type.
+	AudioSoundfont = "audio/soundfont"
 	// AudioSpMidi sp-midi mime type.
 	AudioSpMidi = "audio/sp-midi"
 	// AudioSpeex speex mime type.
@@ -553,6 +555,8 @@ func IsAudio(mt string) bool {
 	case "audio/scip":
 		return true
 	case "audio/sofa":
+		return true
+	case "audio/soundfont":
 		return true
 	case "audio/sp-midi":
 		return true

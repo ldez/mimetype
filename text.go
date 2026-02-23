@@ -57,6 +57,8 @@ const (
 	TextMizar = "text/mizar"
 	// TextN3 n3 mime type.
 	TextN3 = "text/n3"
+	// TextOrg org mime type.
+	TextOrg = "text/org"
 	// TextParameters parameters mime type.
 	TextParameters = "text/parameters"
 	// TextParityfec parityfec mime type.
@@ -259,6 +261,8 @@ func IsText(mt string) bool {
 	case "text/mizar":
 		return true
 	case "text/n3":
+		return true
+	case "text/org":
 		return true
 	case "text/parameters":
 		return true
