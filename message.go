@@ -33,6 +33,10 @@ const (
 	MessageMls = "message/mls"
 	// MessageNewsObsoletedByRfc5537 news (OBSOLETED by [RFC5537]) mime type.
 	MessageNewsObsoletedByRfc5537 = "message/news"
+	// MessageOhttpChunkedReq ohttp-chunked-req mime type.
+	MessageOhttpChunkedReq = "message/ohttp-chunked-req"
+	// MessageOhttpChunkedRes ohttp-chunked-res mime type.
+	MessageOhttpChunkedRes = "message/ohttp-chunked-res"
 	// MessageOhttpReq ohttp-req mime type.
 	MessageOhttpReq = "message/ohttp-req"
 	// MessageOhttpRes ohttp-res mime type.
@@ -87,6 +91,10 @@ func IsMessage(mt string) bool {
 	case "message/mls":
 		return true
 	case "message/news":
+		return true
+	case "message/ohttp-chunked-req":
+		return true
+	case "message/ohttp-chunked-res":
 		return true
 	case "message/ohttp-req":
 		return true

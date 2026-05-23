@@ -147,6 +147,8 @@ const (
 	TextVndGraphviz = "text/vnd.graphviz"
 	// TextVndHans vnd.hans mime type.
 	TextVndHans = "text/vnd.hans"
+	// TextVndHekaya vnd.hekaya mime type.
+	TextVndHekaya = "text/vnd.hekaya"
 	// TextVndHgl vnd.hgl mime type.
 	TextVndHgl = "text/vnd.hgl"
 	// TextVndIn3d3dml vnd.in3d.3dml mime type.
@@ -159,6 +161,8 @@ const (
 	TextVndIptcNitf = "text/vnd.IPTC.NITF"
 	// TextVndLatexZ vnd.latex-z mime type.
 	TextVndLatexZ = "text/vnd.latex-z"
+	// TextVndLongform vnd.longform mime type.
+	TextVndLongform = "text/vnd.longform"
 	// TextVndMotorolaReflex vnd.motorola.reflex mime type.
 	TextVndMotorolaReflex = "text/vnd.motorola.reflex"
 	// TextVndMsMediapackage vnd.ms-mediapackage mime type.
@@ -175,12 +179,16 @@ const (
 	TextVndSunJ2meAppDescriptor = "text/vnd.sun.j2me.app-descriptor"
 	// TextVndSosi vnd.sosi mime type.
 	TextVndSosi = "text/vnd.sosi"
+	// TextVndTps vnd.tps mime type.
+	TextVndTps = "text/vnd.tps"
 	// TextVndTypst vnd.typst mime type.
 	TextVndTypst = "text/vnd.typst"
 	// TextVndTrolltechLinguist vnd.trolltech.linguist mime type.
 	TextVndTrolltechLinguist = "text/vnd.trolltech.linguist"
 	// TextVndVcf vnd.vcf mime type.
 	TextVndVcf = "text/vnd.vcf"
+	// TextVndVri vnd.vri mime type.
+	TextVndVri = "text/vnd.vri"
 	// TextVndWapSi vnd.wap.si mime type.
 	TextVndWapSi = "text/vnd.wap.si"
 	// TextVndWapSl vnd.wap.sl mime type.
@@ -352,6 +360,8 @@ func IsText(mt string) bool {
 		return true
 	case "text/vnd.hans":
 		return true
+	case "text/vnd.hekaya":
+		return true
 	case "text/vnd.hgl":
 		return true
 	case "text/vnd.in3d.3dml":
@@ -359,6 +369,8 @@ func IsText(mt string) bool {
 	case "text/vnd.in3d.spot":
 		return true
 	case "text/vnd.latex-z":
+		return true
+	case "text/vnd.longform":
 		return true
 	case "text/vnd.motorola.reflex":
 		return true
@@ -376,11 +388,15 @@ func IsText(mt string) bool {
 		return true
 	case "text/vnd.sun.j2me.app-descriptor":
 		return true
+	case "text/vnd.tps":
+		return true
 	case "text/vnd.trolltech.linguist":
 		return true
 	case "text/vnd.typst":
 		return true
 	case "text/vnd.vcf":
+		return true
+	case "text/vnd.vri":
 		return true
 	case "text/vnd.wap.si":
 		return true

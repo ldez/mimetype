@@ -153,6 +153,8 @@ const (
 	ImageVndSealedPng = "image/vnd.sealed.png"
 	// ImageVndSealedmediaSoftsealGif vnd.sealedmedia.softseal.gif mime type.
 	ImageVndSealedmediaSoftsealGif = "image/vnd.sealedmedia.softseal.gif"
+	// ImageVndSld vnd.sld mime type.
+	ImageVndSld = "image/vnd.sld"
 	// ImageVndSealedmediaSoftsealJpg vnd.sealedmedia.softseal.jpg mime type.
 	ImageVndSealedmediaSoftsealJpg = "image/vnd.sealedmedia.softseal.jpg"
 	// ImageVndSvf vnd.svf mime type.
@@ -331,6 +333,8 @@ func IsImage(mt string) bool {
 	case "image/vnd.sealedmedia.softseal.gif":
 		return true
 	case "image/vnd.sealedmedia.softseal.jpg":
+		return true
+	case "image/vnd.sld":
 		return true
 	case "image/vnd.svf":
 		return true
